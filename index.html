@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" /> -->
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -63,7 +63,7 @@
 
                 <div class="cart">
                     <div class="hamburger">
-                        <i class="fas fa-bars"></i>
+                        <a   onclick="openNav()"><i class="fas fa-bars"></i></a>
                     </div>
                     <div class="cart-shop">
                         <i class="fas fa-shopping-cart"></i>
@@ -74,8 +74,20 @@
                 </div>
             </div>
         </section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+            <a href="">News</a>
+            <a href="">Contact</a>
+        </div>
 
     </header>
+
+
 
     <main class="index">
 
@@ -370,8 +382,8 @@
                     </div>
                     
                 </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-3">
+                <div class="row"> 
+                    <div class="col-12">
                         <div class="service">
                             <div class="image-container">
                                 <a href="">
@@ -389,7 +401,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-12">
                         <div class="service">
                             <div class="image-container">
                                 <a href="">
@@ -407,7 +419,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-12">
                         <div class="service">
                             <div class="image-container">
                                 <a href="">
@@ -425,7 +437,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-12">
                         <div class="service">
                             <div class="image-container">
                                 <a href="">
@@ -545,6 +557,7 @@
                 </div>
             </div>
         </div>
+        <a id="button"><i class="fas fa-chevron-up"></i></a>
     </footer>
     
 
@@ -554,14 +567,9 @@
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>
    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script> -->
     
-    <script src="js/app.js" defer></script>   
+    <script src="assets/js/app.js" defer></script>
     
-    <script>
-        // slick
-
-      
-    </script>
 </body>
 </html>

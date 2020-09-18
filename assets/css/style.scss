@@ -11,6 +11,9 @@ body{
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    margin: 0;
+}
 
 a,
 li{
@@ -156,7 +159,58 @@ header {
         
         
     }
+
+    /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 50; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    // background: linear-gradient(to bottom, #074da2, #008fd5); 
+    background-color: #fafafa;
+    
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    // opacity: 0.97;
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    color: #0186ce;
+    display: block;
+    transition: 0.3s;
+    // border-bottom: 1px solid #0186ce;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+    color: #074da2;
+    
+    // border-radius: 3px;
+    background-color: white;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 0;
+    }
+
 }
+
+
+
 
 //index
 
@@ -691,6 +745,48 @@ footer{
         }
 
     }
+
+    #button {
+        display: inline-block;
+        // background-color: #FF7700;
+        background-color: #25bce9;
+        
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 10px;
+        right: 30px;
+        transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        i{
+            font-size: 35px;
+            margin-top: 8px;
+            color: #fff;
+        }
+      }
+      #button::after {
+        font-weight: normal;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #43C3EA;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }  
 
 }
 
